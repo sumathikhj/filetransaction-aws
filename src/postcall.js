@@ -1,6 +1,6 @@
 import React from 'react';
 
-class postcall extends React.Component {
+class PostCall extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {user: []};
@@ -38,4 +38,4 @@ class postcall extends React.Component {
 	}
 }
 
-export default postcall;
+export default PostCall;

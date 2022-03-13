@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 //import './App.css';
 import RestController from './RestController'
-import postcall from './postcall';
+import PostCall from './postcall';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         
        
 <RestController/>
-<postcall/>
+<PostCall/>
         
       </header>
     </div>
