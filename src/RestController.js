@@ -4,17 +4,17 @@ class RestController extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {users: []};
+		this.state = {users: [{"customerId":"1234","accountId":"3456","creditNumber":"34567"}]};
 		this.headers = [
-			{ key: 'userId', label: 'User ID' },
-			{ key: 'id', label: 'ID' },
-			{ key: 'title', label: 'Title' },
-			{ key: 'body', label: 'Body' }
+			{ key: 'customerId', label: 'Customer ID' },
+			{ key: 'accountId', label: 'Account ID' },
+			{ key: 'creditNumber', label: 'Credit Card' }
+			//{ key: 'body', label: 'Body' }
 		];
 	}
 	
 	componentDidMount() {
-		fetch('https://jsonplaceholder.typicode.com/posts')
+		fetch('https://abbzayk5ql.execute-api.us-east-1.amazonaws.com/MemberProductAPI_V1/member-products-data-s3/awstest.json')
 			.then(response => {
 				return response.json();
 			}).then(result => {
@@ -42,10 +42,10 @@ class RestController extends React.Component {
 						this.state.users.map(function(item, key) {             
 						return (
 								<tr key = {key}>
-								  <td>{item.userId}</td>
-								  <td>{item.id}</td>
-								  <td>{item.title}</td>
-								  <td>{item.body}</td>
+								  <td>{item.customerId}</td>
+								  <td>{item.accountId}</td>
+								  <td>{item.creditNumber}</td>
+									  {/* <td>{item.body}</td>*/}
 								</tr>
 							)
 						})

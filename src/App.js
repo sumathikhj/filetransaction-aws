@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 //import './App.css';
 import RestController from './RestController'
-import PostCall from './postcall';
+import DynamicForm from './DynamicForm';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
         
        
 <RestController/>
-<PostCall/>
+<DynamicForm/>
         
       </header>
     </div>
