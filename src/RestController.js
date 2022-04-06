@@ -15,10 +15,7 @@ class RestController extends React.Component {
 	
 	componentDidMount() {
 		fetch('https://abbzayk5ql.execute-api.us-east-1.amazonaws.com/MemberProductAPI_V1/member-products-data-s3/awstest.json',
-		{headers:{"X-Api-Key":"my8INlNmNI9cRtmu3vIDO33AcJVyiuae3wByZzs9",
-		/*"Access-Control-Allow-Origin":"allowed_origin",*/
-		"Access-Control-Allow-Methods":"GET,OPTIONS",
-		"Access-Control-Allow-Headers":"Content-Type,X-Api-Key",
+		{headers:{"X-Api-Key":"my8INlNmNI9cRtmu3vIDO33AcJVyiuae3wByZzs9",		
 		"Content-Type":"application/json"
 		}}
 )
