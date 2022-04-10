@@ -16,17 +16,13 @@ class RestController extends React.Component {
 	componentDidMount() {
 		fetch("https://abbzayk5ql.execute-api.us-east-1.amazonaws.com/MemberProductAPI_V1/member-products-data-s3/awstest.json",
 		{
-		 headers : { 
-        "Content-Type": "application/json",
-		"Method":"GET",
-        "X-Api-Key": "my8INlNmNI9cRtmu3vIDO33AcJVyiuae3wByZzs9",
-		"Access-Control-Allow-Origin":"allowed_origin",
-		"Access-Control-Allow-Methods":"GET,OPTIONS",
-		"Access-Control-Allow-Headers":"Content-Type,X-Api-Key"
-		}})
+		 mode: 'no-cors',
+		 method: 'GET',
+		 
+		})
 		.then(response => {
-			console.log(JSON.parse(response))
-				return response.json();
+			console.log(response)
+				 response.json();
 			}).then(result => {
 				this.setState({
 					users:result
