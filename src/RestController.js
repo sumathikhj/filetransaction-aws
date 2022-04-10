@@ -18,7 +18,7 @@ class RestController extends React.Component {
 		{
 		 mode: 'no-cors',
 		 method: 'GET',
-		 x-api-keys:'my8INlNmNI9cRtmu3vIDO33AcJVyiuae3wByZzs9'
+		// x-api-keys:'my8INlNmNI9cRtmu3vIDO33AcJVyiuae3wByZzs9'
 		 
 		})
 		.then(response => {
